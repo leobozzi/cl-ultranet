@@ -38,8 +38,8 @@
         'website',
         'helpdesk_mgmt',
         'helpdesk_mgmt_timesheet',
-        'helpdesk_mgmt_motive',
-        'helpdesk_mgmt_type',
+        'helpdesk_motive',
+        'helpdesk_type',
         'project',
 
 		#Contabilidad
