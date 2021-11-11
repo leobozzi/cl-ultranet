@@ -71,6 +71,9 @@
 
         #Utils
         'web_search_with_and',
+        'auto_backup',
+        'muk_web_theme'
+,        
 
     ],
     'data': [
