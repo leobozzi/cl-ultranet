@@ -52,6 +52,8 @@
         'account_journal_security',
         'account_netting',
         'accounting_pdf_reports',
+        'contract',
+        'contract_sale',
 
 		#Localización
         'l10n_ar',
