@@ -37,7 +37,6 @@
         'helpdesk_mgmt',
         'project',
 
-
 		#Contabilidad
         'account',
 		'account_ux',
