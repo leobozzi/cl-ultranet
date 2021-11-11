@@ -30,6 +30,8 @@
         'sale_management',
         'purchase',
         'stock',
+        'hr',
+        'hr_expense',
         'note',
         'board',
         'calendar',
