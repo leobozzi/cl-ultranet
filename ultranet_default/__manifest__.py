@@ -37,6 +37,9 @@
         'calendar',
         'website',
         'helpdesk_mgmt',
+        'helpdesk_mgmt_timesheet',
+        'helpdesk_mgmt_motive',
+        'helpdesk_mgmt_type',
         'project',
 
 		#Contabilidad
@@ -46,6 +49,9 @@
         'account_financial_report',
         'account_menu',
         'partner_statement',
+        'account_journal_security',
+        'account_netting',
+        'accounting_pdf_reports',
 
 		#Localización
         'l10n_ar',
@@ -60,6 +66,7 @@
         'l10n_ar_aeroo_base',
 		'padron_afip',
         'l10n_ar_stock',
+
     ],
     'data': [
     ],
