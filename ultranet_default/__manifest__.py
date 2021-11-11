@@ -67,6 +67,9 @@
 		'padron_afip',
         'l10n_ar_stock',
 
+        #Utils
+        'web_search_with_and',
+
     ],
     'data': [
     ],
@@ -88,6 +91,8 @@
 
     'git-repos': [
         'https://github.com/leobozzi/cl-ultranet.git',
+        'https://github.com/leobozzi/odoo-addons-utils',
+
 
 		# Odoomates
 		#==========================================================================================
