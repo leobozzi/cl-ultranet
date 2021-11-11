@@ -91,7 +91,7 @@
 
     'git-repos': [
         'https://github.com/leobozzi/cl-ultranet.git',
-        'https://github.com/leobozzi/odoo-addons-utils',
+        'https://github.com/leobozzi/odoo-addons-utils.git',
 
 
 		# Odoomates
