@@ -25,14 +25,26 @@
     'summary': 'Customización Ultranet',
     'author': 'Leonardo Bozzi',
     'depends': [
+        #Applicaciones del Cliente
 		'sale',
         'sale_management',
         'purchase',
         'stock',
+        'note',
+        'board',
+        'calendar',
+        'website',
+        'helpdesk_mgmt',
+        'project',
+
 
 		#Contabilidad
         'account',
 		'account_ux',
+        'account_check',
+        'account_financial_report',
+        'account_menu',
+        'partner_statement',
 
 		#Localización
         'l10n_ar',
