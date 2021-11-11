@@ -69,11 +69,15 @@
     ],
 
     'git-repos': [
-        'git@github.com:leobozzi/cl-ultranet.git',
+        'https://github.com/leobozzi/cl-ultranet.git',
 
 		# Odoomates
 		#==========================================================================================
         'https://github.com/odoomates/odooapps odoomates-odooapps',
+
+        # Gabriela Rivero
+		#==========================================================================================
+        'https://github.com/regaby/odoo-custom regaby-odoo-custom',
 
         # OCA
 		#==========================================================================================
