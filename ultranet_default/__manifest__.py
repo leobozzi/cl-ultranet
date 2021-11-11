@@ -51,6 +51,7 @@
         'partner_statement',
         'account_journal_security',
         'account_netting',
+        'om_account_accountant',
         'accounting_pdf_reports',
         'contract',
         'contract_sale',
@@ -72,8 +73,8 @@
         #Utils
         'web_search_with_and',
         'auto_backup',
-        'muk_web_theme'
-,        
+        'mass_editing',
+        'muk_web_theme',
 
     ],
     'data': [
