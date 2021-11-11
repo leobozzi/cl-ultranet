@@ -46,8 +46,6 @@
         'l10n_ar_reports',
         'l10n_ar_aeroo_base',
 		'padron_afip',
-        'l10n_ar_export_arba',
-        'l10n_ar_export_sicore',
         'l10n_ar_stock',
     ],
     'data': [
