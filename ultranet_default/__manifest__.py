@@ -41,6 +41,8 @@
         'helpdesk_motive',
         'helpdesk_type',
         'project',
+        'project_task_material',
+        'project_task_default_stage',
 
 		#Contabilidad
         'account',
@@ -55,6 +57,7 @@
         'accounting_pdf_reports',
         'contract',
         'contract_sale',
+        'product_price_taxes_included',
 
 		#Localización
         'l10n_ar',
