@@ -57,6 +57,7 @@
         'accounting_pdf_reports',
         'contract',
         'contract_sale',
+        'product_contract',
         'product_price_taxes_included',
 
 		#Localización
