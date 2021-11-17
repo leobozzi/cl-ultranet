@@ -26,7 +26,7 @@
     'author': 'Leonardo Bozzi',
     'depends': [
         #Applicaciones del Cliente
-		'sale',
+	    'sale',
         'sale_management',
         'purchase',
         'stock',
@@ -44,9 +44,9 @@
         'project_task_material',
         'project_task_default_stage',
 
-		#Contabilidad
+	#Contabilidad
         'account',
-		'account_ux',
+	    'account_ux',
         'account_check',
         'account_financial_report',
         'account_menu',
@@ -59,6 +59,7 @@
         'contract_sale',
         'product_contract',
         'product_price_taxes_included',
+        'bit_contract_custom',
 
 		#Localización
         'l10n_ar',
@@ -101,7 +102,8 @@
 
     'git-repos': [
         'https://github.com/leobozzi/cl-ultranet.git',
-        'https://github.com/leobozzi/odoo-addons-utils.git',
+        'https://github.com/leobozzi/odoo-addons-utils bit-odoo-addons-utils',
+        'https://github.com/leobozzi/odoo-custom bit-odoo-custom',
 
 
 		# Odoomates
@@ -199,9 +201,9 @@
         # 'https://github.com/ingadhoc/website ingadhoc-website',
     ],
     'docker-images': [
-	'odoo jobiols/odoo-jeo:13.0',
-        'postgres postgres:11.1-alpine',
-        'aeroo adhoc/aeroo-docs',
-        'nginx nginx',
+       'odoo jobiols/odoo-jeo:13.0',
+       'postgres postgres:11.1-alpine',
+       'aeroo adhoc/aeroo-docs',
+       'nginx nginx',
     ]
 }
