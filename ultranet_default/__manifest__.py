@@ -106,25 +106,46 @@
     # 'server_user': ''
 
     'config': [
-        'max_cron_threads = 1',
+        # 'addons_path' is always computed looking for the repositories in sources
+        # 'data_dir' is a fixed location inside docker odoo image
+
+        # You should use 2 worker threads + 1 cron thread per available CPU,
+        # and 1 CPU per 10 concurent users.
+        # if ommited oe will calculate workers and cron´s based on # of cpu
+        #        'workers = 0',
+            'max_cron_threads = 1',
+
+        # Number of requests a worker will process before being recycled and
+        # restarted. Defaults to 8192 if ommited
+            'limit_request = 8192',
+
+        # Maximum allowed virtual memory per worker. If the limit is exceeded,
+        # the worker is killed and recycled at the end of the current request.
+        # Defaults to 640MB
+            'limit_memory_soft = 2147483648',
+
+        # Hard limit on virtual memory, any worker exceeding the limit will be
+        # immediately killed without waiting for the end of the current request
+        # processing. Defaults to 768MB.
+            'limit_memory_hard = 2684354560',
     ],
 
     'git-repos': [
         'https://github.com/leobozzi/cl-ultranet.git',
         'https://github.com/leobozzi/odoo-addons-utils bit-odoo-addons-utils',
         'https://github.com/leobozzi/odoo-custom bit-odoo-custom',
-        'https://github.com/vangrow/ndm ndm',
+        'git@github.com:vangrow/ndm.git -b 13.0',
 
-                # Odoomates
-                # ==========================================================================================
+        # Odoomates
+        # ==========================================================================================
         'https://github.com/odoomates/odooapps odoomates-odooapps',
 
         # Gabriela Rivero
-                # ==========================================================================================
+        # ==========================================================================================
         'https://github.com/regaby/odoo-custom regaby-odoo-custom',
 
         # OCA
-                # ==========================================================================================
+        # ==========================================================================================
         # 'https://github.com/OCA/account-closing oca-account-closing',
         'https://github.com/OCA/account-financial-reporting oca-account-financial-reporting',  # noqa
         'https://github.com/OCA/account-financial-tools oca-account-financial-tools',
@@ -184,7 +205,7 @@
         # 'https://github.com/OCA/account-analytic',
 
         # ADHOC
-                # ==========================================================================================
+        # ==========================================================================================
         # 'https://github.com/ingadhoc/account-analytic ingadhoc-account-analytic',
         'https://github.com/ingadhoc/account-financial-tools ingadhoc-account-financial-tools',  # noqa
         'https://github.com/ingadhoc/account-payment ingadhoc-account-payment',
