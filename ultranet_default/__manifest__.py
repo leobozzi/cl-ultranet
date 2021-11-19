@@ -25,8 +25,8 @@
     'summary': 'Customización Ultranet',
     'author': 'Leonardo Bozzi',
     'depends': [
-        #Applicaciones del Cliente
-	    'sale',
+        # Applicaciones del Cliente
+            'sale',
         'sale_management',
         'purchase',
         'stock',
@@ -44,9 +44,9 @@
         'project_task_material',
         'project_task_default_stage',
 
-	#Contabilidad
+        # Contabilidad
         'account',
-	    'account_ux',
+            'account_ux',
         'account_check',
         'account_financial_report',
         'account_menu',
@@ -61,7 +61,7 @@
         'product_price_taxes_included',
         'bit_contract_custom',
 
-		#Localización
+                # Localización
         'l10n_ar',
         'l10n_ar_ux',
         'l10n_ar_afipws',
@@ -72,10 +72,19 @@
         'l10n_latam_invoice_document',
         'l10n_ar_reports',
         'l10n_ar_aeroo_base',
-		'padron_afip',
+                'padron_afip',
         'l10n_ar_stock',
 
-        #Utils
+        # ndm
+        'bit_ndm',
+        'bit_ndm_dhcp',
+        'bit_ndm_ftth',
+        'bit_ndm_ftth_zxr10',
+        'bit_ndm_network',
+        'bit_ndm_snmp',
+        'bit_ndm_ssh',
+
+        # Utils
         'web_search_with_and',
         'auto_backup',
         'mass_editing',
@@ -94,7 +103,7 @@
     'env-ver': '2',
     'odoo-license': 'CE',
     'port': '8069',
-    #'server_user': ''
+    # 'server_user': ''
 
     'config': [
         'max_cron_threads = 1',
@@ -104,18 +113,18 @@
         'https://github.com/leobozzi/cl-ultranet.git',
         'https://github.com/leobozzi/odoo-addons-utils bit-odoo-addons-utils',
         'https://github.com/leobozzi/odoo-custom bit-odoo-custom',
+        'git@github.com:vangrow/ndm.git',
 
-
-		# Odoomates
-		#==========================================================================================
+                # Odoomates
+                # ==========================================================================================
         'https://github.com/odoomates/odooapps odoomates-odooapps',
 
         # Gabriela Rivero
-		#==========================================================================================
+                # ==========================================================================================
         'https://github.com/regaby/odoo-custom regaby-odoo-custom',
 
         # OCA
-		#==========================================================================================
+                # ==========================================================================================
         # 'https://github.com/OCA/account-closing oca-account-closing',
         'https://github.com/OCA/account-financial-reporting oca-account-financial-reporting',  # noqa
         'https://github.com/OCA/account-financial-tools oca-account-financial-tools',
@@ -175,7 +184,7 @@
         # 'https://github.com/OCA/account-analytic',
 
         # ADHOC
-		#==========================================================================================
+                # ==========================================================================================
         # 'https://github.com/ingadhoc/account-analytic ingadhoc-account-analytic',
         'https://github.com/ingadhoc/account-financial-tools ingadhoc-account-financial-tools',  # noqa
         'https://github.com/ingadhoc/account-payment ingadhoc-account-payment',
@@ -201,7 +210,7 @@
         # 'https://github.com/ingadhoc/website ingadhoc-website',
     ],
     'docker-images': [
-       'odoo jobiols/odoo-jeo:13.0',
+       'odoo jobiols/odoo-jeo:13.0.0.debug',
        'postgres postgres:11.1-alpine',
        'aeroo adhoc/aeroo-docs',
        'nginx nginx',
