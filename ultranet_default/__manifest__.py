@@ -26,7 +26,7 @@
     'author': 'Leonardo Bozzi',
     'depends': [
         # Applicaciones del Cliente
-            'sale',
+        'sale',
         'sale_management',
         'purchase',
         'stock',
@@ -46,7 +46,7 @@
 
         # Contabilidad
         'account',
-            'account_ux',
+        'account_ux',
         'account_check',
         'account_financial_report',
         'account_menu',
@@ -61,7 +61,7 @@
         'product_price_taxes_included',
         'bit_contract_custom',
 
-                # Localización
+        # Localización
         'l10n_ar',
         'l10n_ar_ux',
         'l10n_ar_afipws',
@@ -72,7 +72,7 @@
         'l10n_latam_invoice_document',
         'l10n_ar_reports',
         'l10n_ar_aeroo_base',
-                'padron_afip',
+        'padron_afip',
         'l10n_ar_stock',
 
         # ndm
@@ -83,6 +83,7 @@
         'bit_ndm_network',
         'bit_ndm_snmp',
         'bit_ndm_ssh',
+        'product_brand',
 
         # Utils
         'web_search_with_and',
@@ -152,6 +153,7 @@
         'https://github.com/OCA/account-payment oca-account-payment',
         # 'https://github.com/OCA/apps-store oca-apps-store',
         # 'https://github.com/OCA/bank-payment oca-bank-payment',
+        'https://github.com/OCA/brand oca-brand',
         # 'https://github.com/OCA/business-requirement oca-business-requirement',
         # 'https://github.com/OCA/commission oca-commission',
         'https://github.com/OCA/contract oca-contract',
