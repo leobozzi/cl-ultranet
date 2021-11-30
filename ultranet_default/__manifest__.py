@@ -232,7 +232,8 @@
         # 'https://github.com/ingadhoc/website ingadhoc-website',
     ],
     'docker-images': [
-       'odoo jobiols/odoo-jeo:13.0',
+       #'odoo jobiols/odoo-jeo:13.0',
+       'odoo lbozzi/odoo-docker-lb:13.0',
        'postgres postgres:11.1-alpine',
        'aeroo adhoc/aeroo-docs',
        'nginx nginx',
