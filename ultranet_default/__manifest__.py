@@ -83,7 +83,6 @@
         'bit_ndm_network',
         'bit_ndm_snmp',
         'bit_ndm_ssh',
-        'product_brand',
 
         # Utils
         'web_search_with_and',
