@@ -34,7 +34,7 @@ services:
 
   postgres:
     image: postgres:11.1-alpine
-    container_name: postgres
+    container_name: pg-ultranet
     restart: unless-stopped
     environment:
       - POSTGRES_USER=odoo
