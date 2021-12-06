@@ -28,6 +28,8 @@
         # Applicaciones del Cliente
         'sale',
         'sale_management',
+        'sale_order_type',
+        'sale_order_type_ux',
         'purchase',
         'stock',
         'hr',
@@ -68,6 +70,7 @@
         'l10n_ar_afipws_fe',
         'l10n_ar_bank',
         'l10n_ar_sale',
+        'l10n_ar_sale_order_type',
         'l10n_ar_account_withholding',
         'l10n_latam_invoice_document',
         'l10n_ar_reports',
