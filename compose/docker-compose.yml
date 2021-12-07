@@ -53,7 +53,7 @@ services:
       - ${PROJECT_PATH}/sources:/opt/odoo/custom-addons
       - ${PROJECT_PATH}/backup_dir:/var/odoo/backups/
     links:
-      - pg-ultranet:db
+      - postgres:db
     environment:
       - SERVER_MODE=
     labels:
