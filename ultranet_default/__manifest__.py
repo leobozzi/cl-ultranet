@@ -51,6 +51,7 @@
         'account_ux',
         'account_check',
         'account_financial_report',
+        'account_bank_statement_import_txt_xlsx',
         'account_menu',
         'partner_statement',
         'account_journal_security',
@@ -64,19 +65,22 @@
         'bit_contract_custom',
 
         # Localización
+        # All
         'l10n_ar',
+        'l10n_ar_bank',
+        'l10n_ar_account_withholding',
+        'l10n_ar_sale',
+        'l10n_ar_stock',
+        'padron_afip',
+
+        # CE
         'l10n_ar_ux',
         'l10n_ar_afipws',
         'l10n_ar_afipws_fe',
-        'l10n_ar_bank',
-        'l10n_ar_sale',
         'l10n_ar_sale_order_type',
-        'l10n_ar_account_withholding',
         'l10n_latam_invoice_document',
         'l10n_ar_reports',
         'l10n_ar_aeroo_base',
-        'padron_afip',
-        'l10n_ar_stock',
 
         # ndm
         'bit_ndm',
@@ -89,9 +93,12 @@
 
         # Utils
         'web_search_with_and',
+        'web_advanced_search',
         'auto_backup',
         'mass_editing',
+        'intero_reload_form',
         'muk_web_theme',
+        'odoo_whatsapp_integration',
 
     ],
     'data': [
@@ -115,7 +122,7 @@
         # You should use 2 worker threads + 1 cron thread per available CPU,
         # and 1 CPU per 10 concurent users.
         # if ommited oe will calculate workers and cron´s based on # of cpu
-        #        'workers = 0',
+            'workers = 4',
             'max_cron_threads = 1',
 
         # Number of requests a worker will process before being recycled and
@@ -131,6 +138,69 @@
         # immediately killed without waiting for the end of the current request
         # processing. Defaults to 768MB.
             'limit_memory_hard = 2684354560',
+        # Prevents the worker from using more than CPU seconds for each request.
+        # If the limit is exceeded, the worker is killed. Defaults to 60 sec.
+            'limit_time_cpu = 1200',
+
+        # Prevents the worker from taking longer than seconds to process a request.
+        # If the limit is exceeded, the worker is killed. Defaults to 120. Differs
+        # from --limit-time-cpu in that this is a "wall time" limit including e.g.
+        # SQL queries.
+            'limit_time_real = 2400',
+
+        # default CSV separator for import and export
+            'csv_internal_sep = ,',
+
+        # disable loading demo data for modules to be installed
+            'without_demo = False',
+
+        # Comma-separated list of server-wide modules, there are modules loaded
+        # automatically even if you do not create any database.
+            'server_wide_modules = base,web,dbfilter_from_header',
+
+        # Filter listed database REGEXP
+            'dbfilter =',
+
+            'db_maxconn = 64',
+            'db_name = False',
+            'db_password = odoo',
+            'db_port = 5432',
+            'db_sslmode = prefer',
+            'db_template = template0',
+            'db_user = odoo',
+            'demo = {}',
+            'email_from = False',
+            'geoip_database = /usr/share/GeoIP/GeoLite2-City.mmdb',
+            'http_enable = True',
+            'http_interface =',
+            'http_port = 8069',
+            'limit_time_real_cron = -1',
+            'list_db = True',
+            'log_db = False',
+            'log_db_level = warning',
+            'log_handler = :INFO',
+            'log_level = info',
+            'logfile = /var/log/odoo/odoo.log',
+            'osv_memory_age_limit = 1.0',
+            'osv_memory_count_limit = False',
+            'pg_path =',
+
+            'proxy_mode = True',
+            'reportgz = False',
+            'screencasts =',
+            'screenshots = /tmp/odoo_tests',
+            'smtp_password = False',
+            'smtp_port = 25',
+            'smtp_server = localhost',
+            'smtp_ssl = False',
+            'smtp_user = False',
+            'syslog = False',
+            'test_enable = False',
+            'test_file =',
+            'test_tags = None',
+            "translate_modules = ['all']",
+            'unaccent = False',
+            'upgrade_path =',
     ],
 
     'git-repos': [
@@ -155,6 +225,7 @@
         'https://github.com/OCA/account-payment oca-account-payment',
         # 'https://github.com/OCA/apps-store oca-apps-store',
         # 'https://github.com/OCA/bank-payment oca-bank-payment',
+        'https://github.com/OCA/bank-statement-import oca-bank-statement-import',
         'https://github.com/OCA/brand oca-brand',
         # 'https://github.com/OCA/business-requirement oca-business-requirement',
         # 'https://github.com/OCA/commission oca-commission',
@@ -185,7 +256,7 @@
         # 'https://github.com/OCA/product-pack oca-product-pack',
         'https://github.com/OCA/project oca-project',
         'https://github.com/OCA/project-reporting oca-project-reporting',
-        # 'https://github.com/OCA/purchase-workflow oca-purchase-workflow',
+        'https://github.com/OCA/purchase-workflow oca-purchase-workflow',
         # 'https://github.com/OCA/queue oca-queue',
         # 'https://github.com/OCA/report-print-send oca-report-print-send',
         'https://github.com/OCA/reporting-engine oca-reporting-engine',
