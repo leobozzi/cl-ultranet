@@ -64,6 +64,8 @@
         'product_price_taxes_included',
         'bit_contract_custom',
         'account_bank_statement_import_move_line',
+        'account_statement_move_import',
+        'account_bank_statement_import_transfer_move',
 
         # Localización
         # All
