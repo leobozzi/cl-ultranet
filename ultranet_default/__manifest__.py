@@ -93,6 +93,8 @@
         'bit_ndm_network',
         'bit_ndm_snmp',
         'bit_ndm_ssh',
+        'bit_ndm_telnet',
+        
 
         # Utils
         'web_search_with_and',
